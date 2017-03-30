@@ -6,6 +6,7 @@
 		<title>Builder - WordPress Construction Theme Documentation</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="assets/css/style.css">
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,11 +35,14 @@
 					<!-- left menu start -->
 					<div class="col-md-3">
 						<div class="list-group">
-						<a href="#top" class="list-group-item active">TABLE OF CONTENTS</a>
+							<a href="#top" class="list-group-item active">TABLE OF CONTENTS</a>
 							<a href="#section2" class="list-group-item ps">Overview</a>
 							<a href="#section3" class="list-group-item ps">Theme Installation</a>
 							<a href="#section6" class="list-group-item ps">Plugins Installation</a>
-							<a href="#section5" class="list-group-item ps">Activating Plugins</a>
+							<a href="#section7" class="list-group-item ps">Import Sample Data</a>
+							<a href="#section8" class="list-group-item ps">Menu Setup</a>
+							<a href="#section9" class="list-group-item ps">Assign Home Page</a>
+							<a href="#section8" class="list-group-item ps">Assign Home Page</a>
 						</div>
 					</div>
 					<!-- left menu end -->
@@ -46,7 +50,7 @@
 					<div class="col-md-9">
 						
 						<div id="section1" class="mb40">
-							<p>Thank you for purchasing Fortuna Wordpress Theme! In this document you will find the latest information on how to install, manage and update your theme, as well as create content, install plugins, import Demo data etc. If you like our theme and want to support us please rate it 5 star from your <a href="https://themeforest.net/downloads" target="_blank">Downloads Section</a></p>
+							<p>Thank you for purchasing Builder Wordpress Theme! In this document you will find the latest information on how to install, manage and update your theme, as well as create content, install plugins, import Demo data etc. If you like our theme and want to support us please rate it 5 star from your <a href="https://themeforest.net/downloads" target="_blank">Downloads Section</a></p>
 						</div>
 
 						<div id="section2" class="mb60">
@@ -83,8 +87,48 @@
 						<div id="section6" class="mb60">
 							<h3 class="title">Plugin Installation</h3> <a href="#top" class="to-top ps">#back to top</a><hr>
 							<p>Once you activate the theme you will get a notice like (This theme requires the following plugins:) the screenshot below. Then click on <strong class="orange">Begin installing plugins</strong></p>
-							<p><img src="assets/images/plugin-install-notification.png" alt="install plugin"></p>
-							<p>After installed all the plugins please activate all the plugins one by one.</p>
+							<p><img class="img-thumbnail" src="assets/images/plugin-install-notification.png" alt="install plugin"></p>
+							<p>Once you click <strong class="orange">Begin installing plugins</strong> you will redirect to <strong>Install Required Plugins</strong> page just like screenshot below.</p>
+							<p><img class="img-thumbnail" src="assets/images/installing-plugins.png" alt=""></p>
+							<p><strong class="orange">Step 1:</strong> Select All Plugins</p>
+							<p><strong class="orange">Step 2:</strong> Select <strong>Install</strong> from dropdown menu.</p>
+							<p><strong class="orange">Step 3:</strong> Click <strong>Apply</strong> and wait for a while.</p>
+							<p><strong class="orange">Step 4:</strong> After installed all the plugins please activate all the plugins one by one.</p>
+						</div>
+
+						<div id="section7" class="mb60">
+							<h3 class="title">Import Sample Data</h3> <a href="#top" class="to-top ps">#back to top</a><hr>
+							<h4 class="orange"><i class="fa fa-angle-right"></i> Theme Sample Data </h4>
+							<p>After activated all the plugins time to import sample data. Go to <strong>Tools > Import</strong> and install WordPress importer plugin.</p>
+							<p><img src="assets/images/wp-importer-plugin.png" alt="" class="img-thumbnail"></p>
+							<p>After install the plugin click on <strong>Run Importer</strong>.</p>
+							<p><img class="img-thumbnail" src="assets/images/run-importer.png" alt="install plugin"></p>
+							<p>Please locate the <strong class="green">builder.wordpress.sample.data.xml</strong> and click Upload file and import</p>
+							<p>Select a user and checked Download and import file attachments.</p>
+							<p>Click Submit and wait for a while.</p>
+
+							<h4 class="orange"><i class="fa fa-angle-right"></i> Slideshow Sample Data</h4>
+							<p>Click Slider Revolution from left side menu. Select <strong class="orange">Import Slider</strong> and locate <strong class="green">builder-slideshow.zip</strong> and click <strong class="purple">Import Slider</strong></p>
+							<p><img src="assets/images/import-slider.png" alt="" class="img-thumbnail"></p>
+							<h4 class="orange"><i class="fa fa-angle-right"></i> Widget Sample Data</h4>
+							<p>At first go to <strong>Plugins > Add New</strong> and search for <strong class="purple">Widget Settings Importer/Exporter</strong>. Install this plugin and Activate it.</p>
+							<p><img src="assets/images/widget-settings-import.png" alt="" class="img-thumbnail"></p>
+							<p>Then go to <strong>Tools > Widget Settings Import</strong>. Locate <strong class="greeen">widget_data.json</strong> and click <strong>Show Widget Settings</strong>. Do as you can see in the screenshot below.</p>
+							<p><img src="assets/images/widget-import.png" alt="" class="img-thumbnail"></p>
+
+							<div id="section8" class="mb60">
+							<h3 class="title">Menu Setup</h3> <a href="#top" class="to-top ps">#back to top</a><hr>
+							<p>If sample data imported then go to <strong>Appearence > Menus</strong> and find <strong class="orange">Primary Menu</strong> from upper left dropdown list. Then assign the menu in <strong class="orange">Primary</strong> display menu location.</p>
+							<p><img class="img-thumbnail" src="assets/images/primary-menu.png" alt="install plugin"></p>
+							<p><img class="img-thumbnail" src="assets/images/menu-location.png" alt="install plugin"></p>
+
+							<div id="section9" class="mb60">
+							<h3 class="title">Assign Home Page</h3> <a href="#top" class="to-top ps">#back to top</a><hr>
+							<p>Go to <strong>Settings > Reading</strong>. Change the settings as like screenshot below.</p>
+							<p><img class="img-thumbnail" src="assets/images/assign-homepage.png" alt="install plugin"></p>
+							
+						</div>
+							
 						</div>
 
 						
