@@ -36,3 +36,14 @@ a {
 	display: inline-block;
 	margin-left: 15px;
 }
+.icon-wrap {
+	border: 1px solid #eee;
+	padding: 20px 0;
+	transition: all 0.3s;
+	i:before {
+		font-size: 40px;
+	}
+	&:hover {
+		color: $green;
+	}
+}
